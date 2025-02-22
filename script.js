@@ -77,6 +77,33 @@ function addWakala() {
         alert("Umejiunga kama wakala. Tafadhali tumia neno la siri kuona orodha.");
     } else {
         alert("Tafadhali jaza maelezo yote.");
+
+
+
+        function tumaWhatsApp() {
+    // Kuchukua maelezo ya mteja kutoka kwenye fomu
+    const jinaMteja = document.getElementById("jinaMteja").value;
+    const simuMteja = document.getElementById("simuMteja").value;
+    const hudumaMteja = document.getElementById("hudumaMteja").value;
+    const wakalaID = document.getElementById("wakala").value;
+    
+    // Hakikisha kwamba maelezo yote yamejaa
+    if (jinaMteja && simuMteja && hudumaMteja && wakalaID) {
+        // Ujumbe utakaotumwa
+        const message = `Habari, jina langu ni ${jinaMteja}, namba yangu ni ${simuMteja}, na ninahitaji huduma ya ${hudumaMteja}. Nimeletwa na wakala mwenye ID: ${wakalaID}.`;
+
+        // URL ya WhatsApp
+        const phoneNumber = "0765752918"; // Hapa weka namba yako ya WhatsApp
+        const encodedMessage = encodeURIComponent(message); // Hakikisha ujumbe umefungwa kwa format sahihi
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Fungua WhatsApp na ujumbe tayari
+        window.open(whatsappURL, "_blank");
+    } else {
+        alert("Tafadhali jaza maelezo yote.");
+    }
+}
+
     }
 }
 
