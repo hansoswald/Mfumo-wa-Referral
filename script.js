@@ -98,7 +98,7 @@ function tumaWhatsApp() {
         const message = `Habari, jina langu ni ${jinaMteja}, namba yangu ni ${simuMteja}, na ninahitaji huduma ya ${hudumaMteja}. Nimeletwa na wakala mwenye ID: ${wakalaID}.`;
 
         // URL ya WhatsApp
-        const phoneNumber = "0765752918"; // Hapa weka namba yako ya WhatsApp
+        const phoneNumber = "255765752918"; // Hapa weka namba yako ya WhatsApp
         const encodedMessage = encodeURIComponent(message); // Hakikisha ujumbe umefungwa kwa format sahihi
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
