@@ -78,9 +78,14 @@ function addWakala() {
     } else {
         alert("Tafadhali jaza maelezo yote.");
 
+    }
+}
+
+// Ongeza hii kwa kufanya orodha ionekane moja kwa moja na neno la siri sahihi
+document.getElementById("adminPassword").addEventListener("change", onyeshaWakalas);
 
 
-        function tumaWhatsApp() {
+function tumaWhatsApp() {
     // Kuchukua maelezo ya mteja kutoka kwenye fomu
     const jinaMteja = document.getElementById("jinaMteja").value;
     const simuMteja = document.getElementById("simuMteja").value;
@@ -104,8 +109,4 @@ function addWakala() {
     }
 }
 
-    }
-}
 
-// Ongeza hii kwa kufanya orodha ionekane moja kwa moja na neno la siri sahihi
-document.getElementById("adminPassword").addEventListener("change", onyeshaWakalas);
