@@ -77,12 +77,13 @@ function addWakala() {
         alert("Umejiunga kama wakala. Tafadhali tumia neno la siri kuona orodha.");
     } else {
         alert("Tafadhali jaza maelezo yote.");
-
     }
 }
 
 // Ongeza hii kwa kufanya orodha ionekane moja kwa moja na neno la siri sahihi
 document.getElementById("adminPassword").addEventListener("change", onyeshaWakalas);
+
+
 
 
 function tumaWhatsApp() {
@@ -108,11 +109,3 @@ function tumaWhatsApp() {
         alert("Tafadhali jaza maelezo yote.");
     }
 }
-
-
-
-
-    }
-}
-
-
