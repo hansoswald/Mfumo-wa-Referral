@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi na Sisi - Referral System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Karibu Kwenye Mfumo wa Referral</h1>
+        <p>Letata wateja na upate malipo!</p>
+    </header>
+    
+    <section id="how-it-works">
+        <h2>Jinsi Mfumo Unavyofanya Kazi</h2>
+        <p>Jiunge nasi, pata referral ID yako, na ulete wateja. Unalipwa kwa kila mteja!</p>
+    </section>
+    
+    <section id="join">
+        <h2>Jiunge Kama Wakala</h2>
+        <form id="joinForm">
+            <label>Jina Lako:</label>
+            <input type="text" id="jinaWakala" required>
+            
+            <label>Namba ya Simu:</label>
+            <input type="tel" id="simuWakala" required>
+            
+            <label>Barua Pepe:</label>
+            <input type="email" id="emailWakala" required>
+            
+            <button type="button" onclick="jiungeWakala()">Jiunge Sasa</button>
+        </form>
+        <p id="wakalaID"></p>
+    </section>
+
+   
+    
+    <section id="contact">
+        <h2>Wasiliana Nasi</h2>
+        <form id="contactForm">
+            <label>Jina la Mteja:</label>
+            <input type="text" id="jinaMteja" required>
+            
+            <label>Namba ya Simu:</label>
+            <input type="tel" id="simuMteja" required>
+            
+            <label>Huduma Anayohitaji:</label>
+            <input type="text" id="hudumaMteja" required>
+            
+            <label>Wakala Aliyemleta (Referral ID):</label>
+            <input type="text" id="wakala" required>
+            
+            <button type="button" onclick="tumaWhatsApp()">Tuma WhatsApp</button>
+        </form>
+    </section>
+
+
+    <section id="adminAccessSection">
+        <h2>Orodha ya Wakala</h2>
+        <!-- Input ya password kwa ajili ya admin kuonyesha orodha -->
+        <input type="password" id="adminPassword" placeholder="Ingiza Neno la Siri" required>
+        <button onclick="onyeshaOrodha()">Onyesha Orodha</button>
+        
+        <!-- Orodha ya vijana itaonyeshwa hapa -->
+        <div id="wakalasList"></div>
+    </section>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
